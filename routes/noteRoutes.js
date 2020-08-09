@@ -44,14 +44,13 @@ function deleteNote(body, notesArray) {
 };
 
 
-function editNote(body, notesArray) {
-    const targetNote = body
+// function editNote(body, notesArray) {
+//     const targetNote = body
 
-}
+// }
 
 module.exports = {
     validateNote,
     createNewNote,
-    deleteNote,
-    editNote
+    deleteNote
 }
