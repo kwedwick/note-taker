@@ -45,9 +45,9 @@ app.post('/api/notes', (req, res) => {
     }
 });
 
-app.post('/api/notes/:id', (req, res) => {
+// app.post('/api/notes/:id', (req, res) => {
 
-})
+// })
 
 app.delete('/api/notes/:id', (req, res) => {
     const target = notes.filter(note => note.id === parseInt(req.params.id));

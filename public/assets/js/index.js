@@ -78,7 +78,6 @@ var handleNoteDelete = function (event) {
   deleteNote(note.id).then(function () {
     getAndRenderNotes();
     renderActiveNote();
-    location.reload();
   });
   
 };
