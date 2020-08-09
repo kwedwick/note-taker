@@ -1,9 +1,1 @@
-{
-    "notes": [
-        {
-            "title": "Sample",
-            "text": "Sample field",
-            "id": 1
-        }
-    ]
-}
+{"notes":[{"title":"Sample","text":"Sample field","id":1}]}

@@ -78,8 +78,7 @@ var handleNoteDelete = function (event) {
   deleteNote(note.id).then(function () {
     getAndRenderNotes();
     renderActiveNote();
-  });
-  
+  }); 
 };
 
 // Sets the activeNote and displays it

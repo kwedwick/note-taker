@@ -55,7 +55,8 @@ app.delete('/api/notes/:id', (req, res) => {
     if (target) {
         deleteNote(target, notes);
         //console.log(deleteNote);
-        //res.json({ msg: 'Note Deleted' })
+        //res.json(notes)
+        res.sendFile(path.join(__dirname, './public/notes.html'));
     } else {
         res.status(400).json({ msg: `No note with that id found` });
     }
