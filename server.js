@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 //const { type } = require('os');
 const { notes } = require('./db/db.json')
-const { validateNote, createNewNote, deleteNote, editNote } = require('./routes/noteRoutes');
+const { validateNote, createNewNote, deleteNote } = require('./routes/noteRoutes');
 const nodemon = require('nodemon');
 
 
@@ -56,7 +56,6 @@ app.delete('/api/notes/:id', (req, res) => {
         deleteNote(target, notes);
         //console.log(deleteNote);
         //res.json({ msg: 'Note Deleted' })
-        res.sendFile(path.join(__dirname, './public/notes.html'));
     } else {
         res.status(400).json({ msg: `No note with that id found` });
     }
